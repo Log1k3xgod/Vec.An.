@@ -29,7 +29,7 @@ double determinant(const std::vector<std::vector<double>>& matrix) {
 
         det *= temp[i][i];
 
-        // Приведение к верхнетреугольному виду
+        // Приведение к треугольному виду
         for (int k = i + 1; k < n; ++k) {
             double factor = temp[k][i] / temp[i][i];
             for (int j = i; j < n; ++j) {
